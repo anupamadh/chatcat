@@ -3,6 +3,7 @@
 var  session = require('express-session');
 var MongoStore = require('connect-mongo')(session);
 var config = require('../config');
+const db = require('../db');
 
 if (process.env.NODE_ENV === 'production'){
   //Initialize session with settings for production
